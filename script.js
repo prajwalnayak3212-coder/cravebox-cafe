@@ -61,13 +61,13 @@ function playVideo(itemName) {
   const imageContainer = document.getElementById('imageContainer');
   const menuImage = document.getElementById('menuImage');
   const imageLabel = document.getElementById('imageLabel');
-  const videoPath = `./assets/videos/${itemName}.mp4`;
+  const videoPath = `./${itemName}.mp4`;
 
   // Reset modal state to image-first flow
   imageContainer.classList.add('hidden');
   video.style.display = 'block';
   video.src = videoPath;
-  menuImage.src = `./assets/images/${itemName}.jpg`;
+  menuImage.src = `./${itemName}.jpg`;
   imageLabel.textContent = itemName.charAt(0).toUpperCase() + itemName.slice(1);
 
   modal.classList.remove('hidden');
@@ -100,7 +100,7 @@ function showMenuImage() {
   const imageLabel = document.getElementById('imageLabel');
 
   video.style.display = 'none';
-  const imagePath = `./assets/images/${currentVideoItem}.jpg`;
+  const imagePath = `./${currentVideoItem}.jpg`;
   menuImage.src = imagePath;
   imageLabel.textContent = currentVideoItem.charAt(0).toUpperCase() + currentVideoItem.slice(1);
   imageContainer.classList.remove('hidden');
@@ -133,7 +133,7 @@ function openGallery(num) {
   const img = document.getElementById('galleryImage');
   
   currentGalleryIndex = num;
-  img.src = `./assets/gallery/gallery-${num}.jpg`;
+  img.src = `./gallery-${num}.jpg`;
   
   modal.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
@@ -157,7 +157,7 @@ function prevGallery() {
 
 function updateGalleryImage() {
   const img = document.getElementById('galleryImage');
-  img.src = `./assets/gallery/gallery-${currentGalleryIndex}.jpg`;
+  img.src = `./gallery-${currentGalleryIndex}.jpg`;
 }
 
 function closeGallery() {
