@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7A8F7A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A8BFA8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <circle cx="20" cy="30" r="15" fill="url(#grad)" opacity="0.8"/>
+  <text x="50" y="40" font-family="system-ui, -apple-system" font-size="22" font-weight="700" fill="#7A8F7A" letter-spacing="-0.5">CraveBox Café</text>
+</svg>
